@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(34, 25, 22);
+            background: url('./images/background.png');
+            background-size: 350px;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        header {
+            width: 100%;
+        }
+        header .banner {
+            width: 100%;
+        }
+        header .banner .img-wrap {
+            width: 100%;
+        }
+        header .banner .img-wrap img {
+            width: 100%;
+        }
+        section .content {
+            display: flex;
+            padding: 100px;
+            padding-right: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        section .content .img-wrap {
+            width: 90%;
+            margin-right: 20px;
+        }
+        section .content .img-wrap img {
+            width: 100%;
+        }
+        section .content .info {
+            color: white;
+        }
+        section .content .info .title {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        section .content .info .paragraph {
+            font-size: 28px;
+            letter-spacing: .1em;
+        }
+        section .content .info .paragraph .article{
+            margin-bottom: 20px;
+        }
+        section .content .info .paragraph .sub-title {
+            color: orange;
+            margin: 0 10px 0 30px;
+            position: relative;
+        }
+        section .content .info .paragraph .sub-title::before {
+            content: "";
+            display: block;
+            width: 18px;
+            height: 18px;
+            left: -25px;
+            top: 20%;
+            transform: translateY(-50%);
+            background: orange;
+            position: absolute;
+            transform: rotate(45deg);
+        }
+        section .content .info .paragraph .article .buy{
+            display: inline-block;
+            text-decoration: none;
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+
+        }
+        @media (max-width: 500px) {
+            section .content {
+                flex-direction: column;
+                padding: 20px;
+            }
+            section .content .img-wrap {
+                width: 100%;
+                margin: 0;
+            }
+            section .content .info .title {
+                text-align: center
+            }
+            section .content .info .paragraph .article .buy{
+                margin: 0 auto;
+                width: 100%;
+                text-align: center
+            }
+            section .content .info .title {
+                font-size: 36px;
+                margin-top: 20px;
+                font-weight: 500;
+            }
+        };
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="img-wrap">
+                <img src="/images/banner.png" alt="">
+                <img src="/images/story.png" alt="">
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="content">
+            <div class="img-wrap">
+                <img src="/images/黑矸仔壺底蔭油.jpg" alt="黑矸仔壺底蔭油">
+            </div>
+            <div class="info">
+                <div class="title">黑矸仔壺底蔭油</div>
+                <div class="paragraph">
+                    <div class="article">
+                        <span class="sub-title">原料:</span><span>水、黑豆、海鹽、冰糖、甘草</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">容量:</span><span>200毫升</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">嗅覺體驗:</span><span>輕輕搖晃後，打開瓶蓋，天然的黑豆香氣撲鼻而來。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">口感層次:</span><span>濃郁有層次、入喉後回甘。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">使用方式:</span><span>本產品為高成分的黑豆醬油，滷肉時每毫升醬油可兌換8-8.5倍的水使用。</span>
+                    </div>
+                    <div class="article">
+                        <a href="#" class="buy">馬上購買</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="img-wrap">
+                <img src="/images/黑矸仔白鳳豆醬油.jpg" alt="黑矸仔白鳳豆醬油">
+            </div>
+            <div class="info">
+                <div class="title">黑矸仔白鳳豆醬油</div>
+                <div class="paragraph">
+                    <div class="article">
+                        <span class="sub-title">原料:</span><span>水、黑豆、冰糖、白鳳豆、海 鹽、甘草、高粱</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">風味來源:</span><span>由黑豆與白鳳豆古法釀造 發酵而成。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">嗅覺體驗:</span><span>輕輕搖晃後，打開瓶蓋， 獨特自然的白鳳豆香氣撲鼻而來</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">口感層次:</span><span>屬於甜甘口的濃縮日式醬 油，整體口感較為乾淨爽口。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">適合料理:</span><span>適合馬鈴薯燉肉、醬燒南 瓜、溫豆腐等日式料理。</span>
+                    </div>
+                    <div class="article">
+                        <a href="#" class="buy">馬上購買</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="content">
+            <div class="img-wrap">
+                <img src="/images/黑矸仔柳橙風味醬油.jpg" alt="黒矸仔柳橙風味醬油">
+            </div>
+            <div class="info">
+                <div class="title">黒矸仔柳橙風味醬油</div>
+                <div class="paragraph">
+                    <div class="article">
+                        <span class="sub-title">原料:</span><span>黃豆釀造醬油、冰糖、柳橙濃縮 汁、味醂、米醋、高粱</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">風味來源:</span><span>採新鮮柳汁加熱濃縮。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">嗅覺體驗:</span><span>輕輕搖晃後，拉開產品拉環，獨特自然的柳橙香氣撲鼻而來。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">口感層次:</span><span>帶有清爽的柳橙水果甜香與些微橙皮澀味，豐富了柳橙味道的層次。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">適合料理:</span><span>可搭配芥末或新鮮蘿蔔泥與 生魚片、涼麵、炸物等一起食用，也適合與西式香料搭配作醃肉醬料。</span>
+                    </div>
+                    <div class="article">
+                        <a href="#" class="buy">馬上購買</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="content">
+            <div class="img-wrap">
+                <img src="/images/黑矸仔咖啡風味醬油.jpg" alt="黒矸仔咖啡風味醬油">
+            </div>
+            <div class="info">
+                <div class="title">黒矸仔咖啡風味醬油</div>
+                <div class="paragraph">
+                    <div class="article">
+                        <span class="sub-title">原料:</span><span>黃豆釀造醬油、冰糖、古坑咖啡豆、 味醂、高粱</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">風味來源:</span><span>特選雲林古坑的咖啡原豆。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">嗅覺體驗:</span><span>輕輕搖晃後，拉開產品拉環，獨特自然的古坑咖啡香氣撲鼻而來。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">口感層次:</span><span>前味融合醬油的醬香與咖啡的 咖啡香，尾韻則帶出微微的咖啡苦甘味。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">適合料理:</span><span>最適合搭配各式煎餅、米麵、蘿蔔糕等澱粉類主食一起享用。</span>
+                    </div>
+                    <div class="article">
+                        <a href="#" class="buy">馬上購買</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="content">
+            <div class="img-wrap">
+                <img src="/images/黑矸仔黑蒜風味醬油.jpg" alt="黒矸仔黒蒜風味醬油">
+            </div>
+            <div class="info">
+                <div class="title">黒矸仔黒蒜風味醬油</div>
+                <div class="paragraph">
+                    <div class="article">
+                        <span class="sub-title">原料:</span><span>黑豆釀造醬油、冰糖、黑蒜頭、 蒜頭發酵液、高粱</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">風味來源:</span><span>特選雲林在地蒜頭發酵製成 的黑蒜頭，搭配黑矸仔獨家釀製的蒜頭 發酵液。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">嗅覺體驗:</span><span>輕輕搖晃後，拉開產品拉環， 獨特自然的黑蒜頭香氣撲鼻而來。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">口感層次:</span><span>帶有蒜頭發酵後的甘甜風味。</span>
+                    </div>
+                    <div class="article">
+                        <span class="sub-title">適合料理:</span><span>水餃、燙青菜與白斬雞等家常料理。</span>
+                    </div>
+                    <div class="article">
+                        <a href="#" class="buy">馬上購買</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+</html>
